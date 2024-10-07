@@ -13,7 +13,7 @@ function TopStock() {
 
   const fetchTopStocks = async () => {
     try {
-      const response = await fetch("http://localhost:8080/");
+      const response = await fetch("https://pilottech-backened.onrender.com/");
       const data = await response.json();
       console.log(data)
       setTopStocks(data.topStocks);
