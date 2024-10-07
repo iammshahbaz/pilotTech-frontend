@@ -1,0 +1,42 @@
+.stock-cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    /* border: 2px solid white; */
+    
+}
+.stock-card{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.stock-card:hover{
+    background-color: #1eb2a6;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.top-stock-h1{
+ color: white;
+ margin-top: 50px;
+ margin-bottom: 50px;
+text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .stock-cards{
+    grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .stock-cards{
+    grid-template-columns: repeat(1,1fr);
+    }
+  }
