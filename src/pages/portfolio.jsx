@@ -26,7 +26,7 @@ export default function UserStock() {
   
     const fetchStock = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/portfolio");
+        const response = await axios.get("https://pilottech-backened.onrender.com/portfolio");
         setStock(response.data.stock);
         console.log(response.data.stock);
       } catch (error) {
